@@ -42,7 +42,7 @@ const getData = () => {
   };
 
   const getGoods = () => {
-    fetch('/cross-sell-dbase/dbase.json')
+    fetch('./cross-sell-dbase/dbase.json')
       .then((res) => {
         if (res.ok) {
           return res.json();
